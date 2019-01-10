@@ -1,0 +1,45 @@
+ * {
+    font-size:15px;
+    font-family: sans-serif;
+ }
+
+.book-list {
+    width:84%;
+}
+
+.book-list td {
+    padding:10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.fas {
+    font-size:18px;
+}
+
+.sub-headers {
+    display: inline-flex;
+    width: 90%;
+}
+
+.sub-headers div {
+    background: #e5e5e5;
+    font-weight: 600;
+    padding: 11px;
+    margin-left: 6px;
+    border-radius: 3px;
+} 
+.sub-name {
+    width: 18%;
+}
+
+.sub-editorial {
+    width: 20%;
+}
+
+.sub-author {
+    width:21%;
+}
+
+.sub-edition {
+    width: 18%;
+}
