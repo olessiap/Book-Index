@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import BookItems from './BookItems';
+import SearchBar from './SearchBar';
 import SubHeader from './SubHeader';
 import './style.css';
 
 const BookIndex = () => (
     <div>
+        <SearchBar />
         <SubHeader />
         <BookItems books={testBooks}/>
     </div>

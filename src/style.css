@@ -43,3 +43,18 @@
 .sub-edition {
     width: 18%;
 }
+
+input {
+    width: 77%;
+    padding: 15px;
+    margin-bottom: 30px;
+    outline: none;
+    border-bottom: 2px solid purple;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.fa-search {
+    margin-left:-25px;
+}
