@@ -1,0 +1,45 @@
+[
+    {
+        "id":1,
+        "name":"book 1",
+        "editor": "editor 1",
+        "author": "author 1",
+        "edition": 1200
+    },
+    {
+        "id":2,
+        "name":"book 2",
+        "editor": "editor 2",
+        "author": "author 2",
+        "edition": 1800
+    },
+    {
+        "id":3,
+        "name":"book 3",
+        "editor": "editor 3",
+        "author": "author 3",
+        "edition": 5670
+    },
+    {
+        "id":4,
+        "name":"book 4",
+        "editor": "editor 4",
+        "author": "author 4",
+        "edition": 9184
+    },
+    {
+        "id":5,
+        "name":"book 5",
+        "editor": "editor 5",
+        "author": "author 5",
+        "edition": 6281
+    },
+    {
+        "id":3,
+        "name":"book 6",
+        "editor": "editor 6",
+        "author": "author 6",
+        "edition": 3045
+    }
+]
+
