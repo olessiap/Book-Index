@@ -3,8 +3,13 @@
     font-family: sans-serif;
  }
 
+.app {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .book-list {
-    width:84%;
+    width:100%;
 }
 
 .book-list .deleteButton {
@@ -24,7 +29,7 @@
 
 .sub-headers {
     display: inline-flex;
-    width: 90%;
+    width:100%;
 }
 
 .sub-headers div {
@@ -35,11 +40,11 @@
     border-radius: 3px;
 } 
 .sub-name {
-    width: 18%;
+    width: 20%;
 }
 
 .sub-editorial {
-    width: 20%;
+    width: 21%;
 }
 
 .sub-author {
@@ -47,11 +52,11 @@
 }
 
 .sub-edition {
-    width: 18%;
+    width: 20%;
 }
 
 input {
-    width: 77%;
+    width: 100%;
     padding: 15px;
     margin-bottom: 30px;
     margin-top:20px;
@@ -70,7 +75,6 @@ input {
 .header {
     height:55px;
     background: #a9a9df;
-    width:77%;
     color:white;
     font-size:28px;
     display:flex;
@@ -80,4 +84,26 @@ input {
 .icon {
     font-size: 27px;
     padding:12px 50px 0px 50px;  
+}
+
+.new-book {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.fa-plus-circle {
+    font-size: 100px;
+    color: #e9e9e9;
+    width: 100px;
+    margin: 0 auto;
+    padding: 10px 50px;
+}
+
+.addButton {
+    width:200px;
+    color:white;
+    border-radius:10px;
+    background:#a9a9df;
+    padding: 5px 30px;
 }
