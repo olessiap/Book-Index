@@ -11,7 +11,7 @@ const BookItems = ( {books} ) => (
                     <td className="book-editor">{book.editor}</td>
                     <td className="book-author">{book.author}</td>
                     <td className="book-edition">{book.edition}</td>
-                    <td className="fas fa-times"></td>
+                    <td className="fas fa-times deleteButton"></td>
                 </tr>
             ))}
         </tbody>
