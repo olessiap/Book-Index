@@ -11,20 +11,25 @@ import './style.css';
 export default class BookIndex extends React.Component {
     constructor () {
         super();
+        this.handleAddBook = this.handleAddBook.bind(this);
         this.handleDeleteBook = this.handleDeleteBook.bind(this);
         this.state = { bookItems: listaLibros}
     }
 
-    handleDeleteBook(bookToBeDeleted) {
-        let deletedItems = listaLibros.splice(bookToBeDeleted, 1);
+    handleAddBook(newBook) {
+        listaLibros.push({
+          id: listaLibros.length+1,
+          name: "test book",
+          editor: "test editor",
+          author: "Daddy Yankee",
+          edition: 9999
+        });
         this.setState({bookItems: listaLibros});
-        console.log(this.state);
+      }
+    handleDeleteBook(bookToBeDeleted) {
+        listaLibros.splice(bookToBeDeleted, 1);
+        this.setState({bookItems: listaLibros});
     }
-
-    // removeItem (itemIndex) {
-    //     todoItems.splice(itemIndex, 1);
-    //     this.setState({todoItems: todoItems});
-    //   }
 
     render() {
         return <div className="app">
@@ -34,7 +39,7 @@ export default class BookIndex extends React.Component {
             <BookItems 
                 books={listaLibros} 
                 handleDeleteBook={this.handleDeleteBook}/>
-            <NewBook />
+            <NewBook handleAddBook={this.handleAddBook}/>
         </div>
     }
 }

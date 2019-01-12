@@ -21,7 +21,7 @@ const BookItems = ( {books, handleDeleteBook} ) => (
     </table>
 );
 
-BookItems.PropTypes = {
+BookItems.propTypes = {
     books: PropTypes.array
 };
 

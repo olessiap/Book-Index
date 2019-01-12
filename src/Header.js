@@ -3,9 +3,9 @@ import './style.css';
 
 const Header = () => (
     <div className="header">
-        <i class="far fa-user-circle icon"></i>    
-        <i class="fas fa-bars icon"></i>
-        <i class="fas fa-power-off icon"></i>
+        <i className="far fa-user-circle icon"></i>    
+        <i className="fas fa-bars icon"></i>
+        <i className="fas fa-power-off icon"></i>
     </div>
 )
 

@@ -1,11 +1,15 @@
 import React from 'react';
 import './style.css';
 
-const NewBook = () => (
+const NewBook = ({newBook, handleAddBook}) => (
     <div className="new-book">
-        <i class="fas fa-plus-circle"></i>
+        <i className="fas fa-plus-circle"></i>
         <div>
-            <button className="addButton">Agregar libro</button>
+            <button 
+                className="addButton"
+                onClick={() => handleAddBook(newBook)}>
+                Agregar libro
+            </button>
         </div>
     </div>
 )
