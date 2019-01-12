@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
-const BookItems = ( {books} ) => (
+const BookItems = ( {books, handleDeleteBook} ) => (
     <table className="book-list">
         <tbody>
             {books.map(book => (
@@ -11,7 +11,10 @@ const BookItems = ( {books} ) => (
                     <td className="book-editor">{book.editor}</td>
                     <td className="book-author">{book.author}</td>
                     <td className="book-edition">{book.edition}</td>
-                    <td className="fas fa-times deleteButton"></td>
+                    <td 
+                        className="fas fa-times deleteButton"
+                        onClick={() => handleDeleteBook(book)}>
+                    </td>
                 </tr>
             ))}
         </tbody>

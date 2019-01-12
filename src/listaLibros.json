@@ -33,13 +33,6 @@
         "editor": "editor 5",
         "author": "author 5",
         "edition": 6281
-    },
-    {
-        "id":3,
-        "name":"book 6",
-        "editor": "editor 6",
-        "author": "author 6",
-        "edition": 3045
     }
 ]
 
