@@ -26,7 +26,6 @@
     font-size:18px;
 }
 
-
 .sub-headers {
     display: inline-flex;
     width:100%;
@@ -106,4 +105,81 @@ input {
     border-radius:10px;
     background:#a9a9df;
     padding: 5px 30px;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .7);
+}
+
+.modal-main {
+    position: fixed;
+    width: 335px;
+    height: 340px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 19px 2px #cec7c7;
+}
+
+form {
+    display:grid;
+}
+
+form input {
+    width: 240px;
+    margin: 0 auto;
+    padding: 12px;
+    border-bottom: 2px solid #cecdcd;
+    font-size: 12px;
+    font-family: inherit;
+    padding-left: 0px;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+.display-block {
+    display: block;
+}
+
+.display-none {
+    display: none;
+}
+
+.modalHeading {
+    justify-content: center;
+    display: flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: -16px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.saveModalButton {
+    width: 180px;
+    border-radius: 15px;
+    background: #d8d7d7;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    top: 50%;
+    left: 50%;
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.exitButton {
+    float: right;
+    padding: 10px;
+    font-size: 15px;
 }

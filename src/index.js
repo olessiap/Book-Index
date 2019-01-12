@@ -18,21 +18,22 @@ export default class BookIndex extends React.Component {
 
     handleAddBook(newBook) {
         listaLibros.push({
-          id: listaLibros.length+1,
-          name: "test book",
-          editor: "test editor",
-          author: "Daddy Yankee",
-          edition: 9999
+        id: listaLibros.length+1,
+        name: "test book",
+        editor: "test editor",
+        author: "Daddy Yankee",
+        edition: 9999
         });
+
         this.setState({bookItems: listaLibros});
-      }
+    }
     handleDeleteBook(bookToBeDeleted) {
         listaLibros.splice(bookToBeDeleted, 1);
         this.setState({bookItems: listaLibros});
     }
 
     render() {
-        return <div className="app">
+        return <div className="app modal-background">
             <Header />
             <SearchBar />
             <SubHeader />
