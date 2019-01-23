@@ -9,11 +9,14 @@ import listaLibros from './listaLibros';
 import './style.css';
 
 export default class BookIndex extends React.Component {
-    constructor () {
-        super();
+    constructor (props) {
+        super(props);
+        this.state = { 
+            bookItems: listaLibros
+        };
+
         this.handleAddBook = this.handleAddBook.bind(this);
         this.handleDeleteBook = this.handleDeleteBook.bind(this);
-        this.state = { bookItems: listaLibros}
     }
 
     handleAddBook(newBook) {

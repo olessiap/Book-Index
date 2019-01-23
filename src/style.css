@@ -176,6 +176,7 @@ form input {
     height: 30px;
     margin-top: 30px;
     margin-left: 80px;
+    padding: 8px;
 }
 
 .exitButton {
