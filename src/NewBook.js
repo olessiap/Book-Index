@@ -27,7 +27,7 @@ export default class NewBook extends React.Component {
                 <div>
                     <button 
                         className="addButton"
-                        onClick={() => this.handleAddBook(this.newBook)}>
+                        onClick={() => this.props.handleAddBook(this.props.newBook)}>
                         Agregar libro
                     </button>
                 </div>
