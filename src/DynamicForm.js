@@ -21,17 +21,16 @@ export default class DynamicForm extends React.Component {
             let props = m.props || {};
 
             return (
-                <div key={key}>
-                    <label
-                        key={"l" + m.key}
-                        htmlFor={m.key}>
-                        {m.label}
-                    </label>
+                <div 
+                    key={key}
+                    className="dynamic-form-line"
+                >
                     <input {...props}
                         ref={(key)=>{this[m.key]=key}}
                         type={type}
                         key={"i" + m.key}
                         onChange={(e)=>{this.onChange(e, key)}}
+                        placeholder={m.key}
                     />
                 </div>
             );
@@ -41,11 +40,20 @@ export default class DynamicForm extends React.Component {
     
     render() {
         return(
-            <div>
-                <form onSubmit={(e)=>{this.onSubmit(e)}}>
+            <div className="dynamic-form-main">
+            <h2 className="dynamic-form-heading">Agregar libro</h2>
+                <form 
+                    className="dynamic-form-input"
+                    onSubmit={(e)=>{this.onSubmit(e)}}
+                >
                      {this.renderForm()}
                     <div>
-                        <button type="submit">submit</button>
+                        <button 
+                            type="submit"
+                            className="save-dynamic-form-button"
+                            >
+                            submit
+                        </button>
                     </div>
                 </form>
             </div>
